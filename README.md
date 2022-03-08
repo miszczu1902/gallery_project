@@ -1,2 +1,2 @@
-# gallery_project
-own cms project for gallery
+# Gallery porject
+Own CMS project implements photo gallery.
