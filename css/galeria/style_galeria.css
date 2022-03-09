@@ -1,0 +1,788 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(270deg, #2a3c40, #374f53, #416063, #4d747b, #4f839a, #6bacca, #8bd0e2, #8cc1b9, #6f8b7c);
+    background-size: 1800% 1800%;
+    -webkit-animation: BackgroundFade 20s ease infinite;
+    -moz-animation: BackgroundFade 20s ease infinite;
+    animation: BackgroundFade 20s ease infinite;
+}
+
+@-webkit-keyframes BackgroundFade {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes BackgroundFade {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes BackgroundFade {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.hide {
+    opacity: 0
+}
+
+.show {
+    opacity: 1;
+}
+
+/*=======MENU=======*/
+div.menu {
+    width: 12%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: #99CC99;
+    -webkit-box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+
+}
+
+div.ham {
+    display: inline-block;
+    width: 35%;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.bar1, .bar2, .bar3 {
+    text-align: center;
+    margin: auto;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin-top: 6px;
+}
+
+div.menu-butts {
+    margin: auto;
+    text-align: center;
+}
+
+p.menu-select {
+    width: 98%;
+    transition-property: width, background-color;
+    transition-duration: 1s;
+    font-size: 120%;
+    padding-left: 2%;
+}
+
+p.menu-select:hover {
+    font-weight: bold;
+    background-color: #CCFF66;
+    color: #3300CC;
+    border-radius: 3%;
+    font-weight: bold;
+}
+
+a.link:link {
+    text-decoration: none;
+    color: #000;
+}
+
+a.link:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a.link:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+p.login, p.registry {
+    text-align: center;
+    width: 60%;
+    transition-property: background-color;
+    transition-duration: 1s;
+    font-size: 110%;
+    margin-top: 25%;
+    margin-left: 17%;
+    margin-right: 20%;
+    border: 3px solid #FFF;
+    color: #FFF;
+    background-color: #336666;
+    padding: 3%;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+p.login:hover, p.registry:hover {
+    -webkit-box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    background-color: #66CCFF;
+    font-weight: bold;
+}
+
+form.back {
+    width: 80%;
+    margin-top: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+input.logout {
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    transition-property: background-color;
+    transition-duration: 1s;
+    font-size: 100%;
+    margin-top: 25%;
+    margin-left: 0;
+    margin-right: 15%;
+    border: 3px solid #FFF;
+    color: #FFF;
+    background-color: #336666;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+input.logout:hover {
+    -webkit-box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    background-color: #66CCFF;
+    font-weight: bold;
+}
+
+#sent {
+    width: 25%;
+    height: 5vh;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 1s;
+    font-size: 110%;
+    border: 3px solid #FFF;
+    color: #FFF;
+    background-color: #336666;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+#sent:hover {
+    -webkit-box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 6px 25px -6px rgba(0, 0, 0, 0.75);
+    background-color: #66CCFF;
+    font-weight: bold;
+}
+
+div.circlePrev {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    background-color: #99CC99;
+    bottom: 13%;
+    right: 1.5%;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 1s;
+    -webkit-box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.circlePrev:hover {
+    background-color: #CCFF66;
+}
+
+/*=======================*/
+/*========ZARARTOŚĆ==========*/
+div.content {
+    width: 88%;
+    min-height: 100%;
+    margin-left: 12%;
+    float: left;
+    position: relative;
+}
+
+h1.h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    height: 5%;
+    color: #FFF;
+    margin-bottom: 5%;
+}
+
+p.first-text {
+    font-size: 170%;
+    text-align: center;
+    color: #FFF;
+}
+
+div.gallery {
+    width: 100%;
+}
+
+div.foot {
+    width: 100%;
+    height: 3%;
+    position: absolute;
+    float: left;
+    bottom: 0;
+    font-size: 150%;
+    color: #FFF;
+    text-align: center;
+    background-color: #666666;
+    -webkit-box-shadow: 2px 0px 32px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 0px 32px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 0px 32px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*===================*/
+/*====dodaj-album.php=====*/
+div.addAlbum {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+form.albumName {
+    width: 60%;
+    margin-left: 15%;
+    margin-right: 20%;
+    margin-top: 5%;
+    text-align: center;
+    background-color: #669999;
+    padding: 5%;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*============================*/
+/*====dodaj-foto.php======*/
+form.fotoAdd {
+    width: 60%;
+    margin-left: 17%;
+    margin-right: 20%;
+    margin-top: 2%;
+    padding: 3%;
+    text-align: center;
+    background-color: #669999;
+    -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+textarea.ds {
+    width: 100%;
+    height: 10%;
+    float: left;
+    margin-top: 46;
+    margin-bottom: 2%;
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    border-radius: 3px;
+    resize: none;
+}
+
+input.in {
+    width: 80%;
+    height: 5vh;
+    font-family: 'Raleway', sans-serif;
+    border-style: none;
+    font-size: 150%;
+    border-radius: 5px;
+}
+
+/*================================*/
+/*=========galeria.php,  stronicowanie i album.php================*/
+div.filterBar {
+    top: 0;
+    background-color: #669999;
+    width: 100%;
+    height: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.pagin {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: #669999;
+    text-align: center;
+    width: 100%;
+    bottom: 3%;
+    height: 2%;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
+}
+
+.prev {
+    width: 3%;
+    height: 100%;
+    float: left;
+    margin-left: 1%;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.next {
+    width: 3%;
+    height: 100%;
+    color: white;
+    float: right;
+    margin-right: 1%;
+    text-align: right;
+    border-radius: 5px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+div.pagis {
+    width: 6%;
+    height: 10%;
+    font-size: 150%;
+    padding-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    display: inline-block;
+    border: 0.5px solid #FFF;
+    color: #FFF;
+    border-radius: 5px;
+    transition-property: background-color;
+    transition-duration: 1s;
+
+}
+
+.pagis:hover {
+    background-color: #66CCFF;
+    -webkit-box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 33px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.pagiList {
+    margin: auto;
+}
+
+span.information {
+    width: 20%;
+    margin-left: 2%;
+    padding-top: 0.5%;
+    float: left;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/*==================================*/
+/*========foto.php================*/
+div.fotoView {
+    position: relative;
+    width: 100%;
+    max-height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div.slider {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 20, 0, 0.8);
+
+}
+
+.prevFoto {
+    position: absolute;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    text-align: center;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    width: 3%;
+    height: 10%;
+    z-index: 2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nextFoto {
+    position: absolute;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    width: 3%;
+    height: 10%;
+    z-index: 2;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.nextFoto:hover, .prevFoto:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.rating {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    background-color: #669999;
+}
+
+div.noUser {
+    width: 30%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    float: left;
+}
+
+form.addNote {
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.about {
+    float: left;
+}
+
+div.commentList {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #DDDDDD;
+}
+
+div.comment {
+    display: flex;
+    align-items: center;
+    justify-content: justify;
+    width: 70%;
+    height: auto;
+    margin-top: 2vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: #BBBBBB;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+span.con {
+    height: auto;
+    padding-left: 1%;
+    margin-left: 3%;
+    border-left: 1px solid black;
+}
+
+form.addComment {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: justify;
+}
+
+textarea.comment {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    resize: none;
+    min-height: 70%;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*========konto.php================*/
+table.inx {
+    position: relative;
+    top: -20%;
+    color: #FFF;
+}
+
+td.oUserku {
+    width: 16%;
+    height: auto;
+    font-size: 140%;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.view {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div.edit {
+    width: 80%;
+    min-height: 60%;
+    border-radius: 5px;
+    background-color: #99CC99;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    font-size: 110%;
+    font-weight: bold;
+    margin: 1%;
+    padding: 0.8%;
+
+}
+
+.konto, .albumy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.albumy:hover, .zdjecia:hover {
+    background-color: #66CCFF;
+}
+
+.albumy:hover {
+    color: #FFF;
+}
+
+.konto, .zdjecia {
+    width: 100%;
+    height: 80%;
+    background-color: #4d747b;
+    color: #FFF;
+}
+
+form.changeDane {
+    width: 100%;
+    height: 100%;
+    padding-top: 4%;
+    font-weight: bold;
+}
+
+table.chAc {
+    width: 100%;
+}
+
+td.st {
+    width: 50%;
+}
+
+input.chIN {
+    width: 100%;
+    margin: 2%;
+    font-family: 'Raleway', sans-serif;
+    border-style: none;
+    font-size: 120%;
+    border-radius: 5px;
+}
+
+div.conf {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+span.change {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+span.change:hover {
+    background-color: #4d747b;
+}
+
+div.albums {
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #4d747b;
+    min-height: 74%;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+table.editAlbums, table.editFotos {
+    width: 100%;
+}
+
+td.albumTitle {
+    padding: 1%;
+    border-radius: 5px;
+    background-color: #336666;
+    width: 70%;
+    min-height: 15%;
+    color: #FFF;
+}
+
+td.albumSel {
+    width: 15%;
+    text-align: center;
+    font-size: 120%;
+}
+
+td.albumDel {
+    width: 15%;
+    color: #ff0000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 120%;
+}
+
+input.titleCh {
+    font-family: 'Raleway', sans-serif;
+    width: 85%;
+    font-size: 125%;
+    border-style: none;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.tCh {
+    width: 11%;
+    margin-left: 1%;
+    border: 3px solid #FFF;
+    color: #FFF;
+    background-color: #336666;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aDel {
+    color: #ff0000;
+    font-size: 120%;
+    margin: 1%;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tCh:hover {
+    background-color: #66CCFF;
+    font-weight: bold;
+}
+
+span.tool {
+    font-size: 80%;
+    margin-left: 5px;
+}
+
+div.fotosy {
+
+    text-align: center;
+    background-color: #4d747b;
+    margin-top: 1%;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+td.foty {
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+td.opis {
+    width: 90%;
+    padding-left: 2%;
+}
+
+/*====================================*/

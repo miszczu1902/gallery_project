@@ -1,0 +1,184 @@
+/*==========admin/index.php============*/
+div.edit {
+    height: auto;
+}
+
+div.comeBack {
+    color: #FFF;
+    background-color: #336666;
+    border-radius: 5px;
+    width: 12%;
+    margin-bottom: 0.5%;
+    border: 1px solid #FFF;
+}
+
+table.adminFotos {
+    background-color: #4d747b;
+    padding: 2%;
+    border-radius: 5px;
+    border-collapse: collapse;
+
+}
+
+td.fotki {
+    width: 20%;
+    height: 15%;
+    color: #FFF;
+    text-align: center;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.fotki:hover {
+    opacity: 0.4;
+}
+
+td.what {
+    height: auto;
+    padding: 1%;
+}
+
+button.aFo {
+    color: #66ff66;
+    font-size: 110%;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+button.dFo {
+    color: #ff0000;
+    font-size: 110%;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+table.adminComs {
+    margin: auto;
+    width: 98%;
+    height: auto;
+    background-color: #4d747b;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 2%;
+    border-collapse: collapse;
+}
+
+textarea.titleCh {
+    width: 100%;
+    height: 15%;
+    resize: none;
+    font-family: 'Raleway', 'sans-serif';
+    border-style: none;
+    border-radius: 5px;
+    color: #000;
+}
+
+tr {
+    border-bottom: 1pt solid #FFF;
+}
+
+td.about {
+    padding: 1%;
+}
+
+table.usery {
+    width: 100%;
+    height: auto;;
+    background-color: #4d747b;
+    padding: 2%;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.nick {
+    font-weight: bold;
+}
+
+/*====================================*/
+/*==========reszta folderu admin===============*/
+div.pagin {
+    height: 4%;
+}
+
+span.information {
+    width: 20%;
+    margin-left: 2%;
+    padding-top: 0.5%;
+    float: left;
+    color: #FFF;
+    font-weight: bold;
+}
+
+div.fotNie {
+    opacity: 0.5;
+}
+
+div.list {
+    background-color: rgba(0, 20, 0, 0.8);
+}
+
+div.describe {
+    margin: 3%;
+}
+
+input.descrEdit {
+    width: 80%;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Raleway', 'sans-serif';
+    height: 4vh;
+    font-size: 113%;
+}
+
+input.tCh {
+    height: 4vh;
+    font-size: 113%;
+}
+
+button.tCh {
+    width: auto;
+    font-size: 140%;
+}
+
+span.tool {
+    font-size: 110%;
+}
+
+#target {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    height: 20%;
+    border-radius: 5px;
+    margin: 5%;
+    background-color: #99CC99;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+div.sel {
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#target:hover {
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    background-color: #66CCFF
+}
+
+select.upry {
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background-color: #336666;
+    color: #FFF;
+    width: auto;
+    font-size: 140%;
+}

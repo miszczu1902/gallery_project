@@ -1,0 +1,62 @@
+div.list {
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.tooltipe {
+    width: 180px;
+    height: 180px;
+    overflow: auto;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-box-sizing: border-box;
+    position: absolute;
+    border-radius: 5px;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+div.fot:hover div.tooltipe {
+    opacity: 1;
+    -webkit-box-shadow: 0px 5px 33px 0px rgba(40, 0, 0, 0.0);
+    -moz-box-shadow: 0px 5px 33px 0px rgba(40, 0, 0, 0.0);
+    box-shadow: 0px 5px 33px 0px rgba(40, 0, 0, 0.0);
+}
+
+div.fotNie:hover div.tooltipe {
+    opacity: 1;
+    -webkit-box-shadow: 0px 5px 33px 0px rgba(40, 0, 0, 0.0);
+    -moz-box-shadow: 0px 5px 33px 0px rgba(40, 0, 0, 0.0);
+    box-shadow: 0px 5px 33px 0px rgba(40, 0, 0, 0.0);
+}
+
+div.fot:hover img.listFot {
+    opacity: 0.4;
+}
+
+div.fot, div.fotNie {
+    position: relative;
+    display: inline-block;
+    margin: 2%;
+
+}
+
+img.listFot {
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    -webkit-box-shadow: -18px 1px 30px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -18px 1px 30px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: -18px 1px 30px -18px rgba(0, 0, 0, 0.75);
+}
