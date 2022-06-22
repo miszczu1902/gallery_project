@@ -1,4 +1,4 @@
-# Gallery porject
+# Gallery project
 Own CMS project implements photo gallery.
 
 first login:
